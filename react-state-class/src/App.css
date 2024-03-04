@@ -4,6 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
+.box{
+  padding: 10px;
+  font-size: larger;
+}
+.button{
+  margin-left: 6px;
+}
 
 .logo {
   height: 6em;

@@ -5,12 +5,20 @@ export default function TodoList(){
 
 
     let addNewTask = () =>{
-        console.log("we have to add new task in todo");
-    }
+        setTodos([...todos, newTodo]);
+        setNewTodo("");
+    };
+    let updateTodoValue  = (event) => {
+        setNewTodo(event.target.value);
+    };
+    
     return (
     <div>
-        <input className="box" placeholder="add a task" value={newTodo}></input>
-        <button onClick={addNewTask}  className="button">Add Task</button>
+        <input className="box" placeholder="add a task"
+        value={newTodo}
+         onChange={updateTodoValue}
+         ></input>
+        <button onClick={addNewTask }  className="button">Add Task</button>
         <br></br>
         
         <br></br>

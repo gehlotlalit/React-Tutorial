@@ -1,13 +1,15 @@
 import "./App.css";
-import Button from "./Button";
-import Form from "./form";
-
-function App(){
+// import Form from "./Form";/
+// import CommentsForms from "./CommentsForms";
+// import Counter from "./Counter";    
+import Joker from "./Joker";
+function App() {
   return (
     <>
-    <Button />
-    <Form/>
+      {/* <CommentsForms/> */}
+     {/* <Counter/> */}
+     <Joker/>
     </>
-  );
+    );
 }
 export default App;
